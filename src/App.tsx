@@ -9,12 +9,16 @@ function App() {
   function handleSubmit(event: FormEvent) {
     event.preventDefault();
 
-    const divisibleBy3Count = calculateDifferenceDivisibleBy3Count(
-      Number(firstNumber),
-      Number(secondNumber)
-    );
+    try {
+      const divisibleBy3Count = calculateDifferenceDivisibleBy3Count(
+          Number(firstNumber),
+          Number(secondNumber)
+      );
 
-    alert(divisibleBy3Count);
+      alert(divisibleBy3Count);
+    } catch (e) {
+      alert(e)
+    }
   }
 
   return (

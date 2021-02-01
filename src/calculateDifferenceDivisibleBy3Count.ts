@@ -3,7 +3,7 @@ export function calculateDifferenceDivisibleBy3Count(
   secondNumber: number
 ) {
   if (firstNumber > secondNumber) {
-    return "secondNumber should be more than firstNumber";
+    throw new Error("secondNumber should be more than firstNumber");
   }
 
   let divisibleBy3Count = 0;
