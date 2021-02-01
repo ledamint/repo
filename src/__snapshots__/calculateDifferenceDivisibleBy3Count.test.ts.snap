@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calculateDifferenceDivisibleBy3Count should return error if firstNumber should be more than secondNumber: secondNumber should be more than firstNumber 1`] = `"secondNumber should be more than firstNumber"`;

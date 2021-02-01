@@ -2,7 +2,9 @@ import { calculateDifferenceDivisibleBy3Count } from "./calculateDifferenceDivis
 
 describe("calculateDifferenceDivisibleBy3Count", () => {
   it("should return error if firstNumber should be more than secondNumber", () => {
-    expect(calculateDifferenceDivisibleBy3Count(2, 1)).toEqual(
+    expect(() =>
+      calculateDifferenceDivisibleBy3Count(2, 1)
+    ).toThrowErrorMatchingSnapshot(
       "secondNumber should be more than firstNumber"
     );
   });
